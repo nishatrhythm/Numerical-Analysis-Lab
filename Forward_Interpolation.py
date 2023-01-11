@@ -21,12 +21,13 @@ y[3][0] = 0.8660
 
 for i in range(1, n):
     for j in range(n - i):
-        y[j][i] = y[j + 1][i - 1] - y[j][i - 1];
+        y[j][i] = y[j + 1][i - 1] - y[j][i - 1]
 
 for i in range(n):
     print(x[i], end="\t")
     for j in range(n - i):
         print(format(y[i][j], '4.2e'), end="\t")
+        # .2f
     print("")
 
 value = 52
